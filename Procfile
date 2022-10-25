@@ -1,1 +1,1 @@
-web gunicorn vechicleSystem.wegi:application --log file-
+web: gunicorn vechicleSystem.wsgi
