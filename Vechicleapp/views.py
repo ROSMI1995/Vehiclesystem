@@ -37,7 +37,7 @@ class RegisterView(generic.CreateView):
 
 class HomePageView(ListView):
 	model = VehicleData
-	template_name = 'home.html'
+	template_name = 'index.html'
 	context_object_name = 'all_data_list'
 
 
