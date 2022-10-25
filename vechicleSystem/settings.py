@@ -29,7 +29,9 @@ SECRET_KEY = 'django-insecure-waz4d+#gwc7^_n2473^@&cvj$^$%1&5n23r!%bb&i45fxeie=c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://vechicleform.herokuapp.com/',
+                'localhost',
+                '127.0.0.1']
 
 
 # Application definition
