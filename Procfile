@@ -1,0 +1,1 @@
+web gunicorn vechicleSystem.wegi:application --log file-

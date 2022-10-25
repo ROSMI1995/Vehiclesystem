@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+<!--templates/blog/blog_list.html-->
+{% block title %}Delete Vehicle Data{% endblock %}
+
+{% block container %}
+
+{% if user.is_authenticated %}
+
+
+<h2>Delete Vehicle Data</h2><br>
+<h3>Delete : {{ post.Vehicle_Number  }}</h3><br>
+
+<div class="form-group">
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<strong>Are you sure?!</strong><br>
+		<button class="btn btn-success">Delete</button>
+
+	
+	</form>
+{% else %}
+ <p>Unauthorised Acess.Login to make changes<br>
+    <a class=" nav-link btn-primary" href="{% url 'login' %}">Login</a></p>
+ {% endif %}
+</div>
+
+{% endblock %}
+
+	
+
