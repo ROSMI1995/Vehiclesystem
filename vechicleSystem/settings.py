@@ -132,7 +132,7 @@ LOGOUT_REDIRECT_URL = 'login'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = os.path.join(BASE_DIR. 'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
+# STATIC_ROOT = os.path.join(BASE_DIR. 'staticfiles')
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
 
 django_heroku.settings(locals())
