@@ -28,7 +28,7 @@
         }
     </style>
    
-    <h2>Vechicle management System</h2>
+    <h2>Vehicle Management System</h2>
     <hr>
 
 
@@ -40,7 +40,7 @@
       <a class="nav-link" href="{{ url }}">Home</a>
       {% url 'add-vehicle' as url %}
       <li class="nav-item {% if request.path == url %}active{% endif %}">
-      <a class="nav-link" href="{{ url }}">Vechicle Form</a>
+      <a class="nav-link" href="{{ url }}">Vehicle Form</a>
       </li>
 
     {% if user.is_authenticated %}
